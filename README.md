@@ -1,7 +1,7 @@
 
 # Conway's Game of Life
 
-**Note:** This project was developed as an in-class assignment.
+**Acknowledgement:** This project was developed as an in-class assignment.
 
 This is a Java implementation of Conway's Game of Life, a cellular automaton devised by mathematician John Conway. The game consists of a grid of cells that evolve through generations according to a set of simple rules.
 
