@@ -1,18 +1,46 @@
-## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# Conway's Game of Life
 
-## Folder Structure
+**Note:** This project was developed as an in-class assignment.
 
-The workspace contains two folders by default, where:
+This is a Java implementation of Conway's Game of Life, a cellular automaton devised by mathematician John Conway. The game consists of a grid of cells that evolve through generations according to a set of simple rules.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Features
+- Interactive user interface
+- Customizable initial patterns (e.g., X-pattern)
+- Step-by-step simulation
+- Modular code structure (Cell, Grid, Game, UserInterface, etc.)
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Project Structure
+- `Cell.java` - Represents a single cell in the grid.
+- `Grid.java` - Manages the grid of cells and their states.
+- `Game.java` - Controls the game logic and simulation steps.
+- `UserInterface.java` - Handles user interaction and display.
+- `Life.java` - Entry point for running the game.
+- `Support.java` - Utility and helper functions.
+- `App.java` - (in `src/`) May contain additional application logic.
+- `simple.init`, `X-pattern.init` - Example initial pattern files.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## How to Run
+1. **Compile the code:**
+	```sh
+	javac *.java
+	```
+	or, if using the `src/` directory:
+	```sh
+	javac src/*.java
+	```
+2. **Run the game:**
+	```sh
+	java Life
+	```
+	or, if the main class is in `src/`:
+	```sh
+	java -cp src App
+	```
 
-## Dependency Management
+## Custom Patterns
+You can create your own initial patterns by editing or adding `.init` files. The format should match the examples provided.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## License
+This project is for educational purposes.
